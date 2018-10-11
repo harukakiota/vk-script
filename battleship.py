@@ -73,7 +73,8 @@ def refresh(vk_api, owner_id, post_id):
     return [answer_bank, begin_date, end_date]
 
 def check_current_game(vk_apis, ended_game_date): # идёт ли в данный момент вообще игра 
-    get_post = vk_apis[0].wall.get(domain=domain, count=20, filter='owner', v='5.71')
+    global config
+    get_post = vk_apis[0].wall.get(domain=config['domain'], count=20, filter='owner', v='5.71')
     for item in get_post['items']: 
         if item['text'].find('ловлютунца') != -1:
             if item['date'] == ended_game_date: # совпадает ли игра с закешированной

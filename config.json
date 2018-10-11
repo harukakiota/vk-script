@@ -1,0 +1,11 @@
+{
+    "domain":"vk_domain",
+    "app_id":1111111,
+    "post_id":0,
+    "owner_id":0,
+    "users":[
+        {"login":"login1", "password":"password1", "name":"name1", "surname":"surname1"},
+        {"login":"login2", "password":"password2", "name":"name2", "surname":"surname2"},
+        {"login":"login3", "password":"password3", "name":"name3", "surname":"surname3"}
+    ]
+}
